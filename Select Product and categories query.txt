@@ -1,0 +1,4 @@
+Select p.Name as "Product", c.Name as "Category" from
+Products as p left join  Product_Category as pc on
+p.Id = pc.ProductId full outer join Categories as c on
+c.Id = pc.CategoryId
